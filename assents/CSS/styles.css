@@ -15,15 +15,6 @@
     --light-color: #00D176;
 }
 
-@keyframes fade{
-    from{
-      opacity:0.4;
-    }
-    to{
-      opacity:1;
-    }
-  }
-
 body {
     background-color: #252525;
     color: #FFF;
@@ -106,10 +97,6 @@ body {
     left: calc(67% + 800px);
     opacity: 0;
 }
-
-
-
-
 
 .list .item .content{
     position: absolute;
@@ -198,11 +185,6 @@ body {
 }
 
 /* Carousel */
-
-
-
-
-
 
 /* next prev arrows */
 
@@ -438,6 +420,15 @@ body {
 
 /* Parceiros */
 
+@keyframes fade{
+    from{
+      opacity:0.4;
+    }
+    to{
+      opacity:1;
+    }
+  }
+
     #slider{
         margin:0 auto;
         width:80%;
@@ -498,7 +489,7 @@ body {
 
 @media(min-width: 768px) {
     #copy-container p {
-        font-size: 30px;
+        font-size: 10px;
     }
 }
 
