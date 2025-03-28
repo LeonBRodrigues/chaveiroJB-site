@@ -1,0 +1,147 @@
+.container-contato {
+    margin-top: 80px;
+}
+
+@media (min-width: 768px) {
+    .container-contato h1 {
+        font-size: 50px;
+    }
+}
+
+#footer-center {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    #footer-center {
+        font-size: 30px;
+    }
+}
+
+#fonter-center h3 {
+    font-weight: bold;
+}
+
+#footer-center .store-phone {
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+.store-phone a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+/* FORM*/
+#form-container {
+    background-color: #FFF;
+    border-radius: 20px;
+    box-shadow: .5px 10px 15px rgba(0, 0, 0, .2);
+    margin: 25px auto;
+    padding: 25px;
+}
+
+@media(min-width: 768px) {
+    #form-container {
+        margin: 50px auto;
+        padding: 50px;
+    }
+}
+
+#form-container h2 {
+    font-weight: 900px;
+    margin-bottom: 30px;
+    color: #000;
+    text-align: center;
+}
+
+#form-container a {
+    color: var(--primary-color);
+    transition: .5s;
+}
+
+#form-container a:hover {
+    color: var(--light-color);
+}
+
+#form-container form {
+    padding-bottom: 50px;
+}
+
+#form-container .form-control {
+    border: none;
+    border-bottom: 1px solid #00854B;
+    border-radius: 0;
+}
+
+#form-container .form-control:focus {
+    box-shadow: none;
+}
+
+#form-container .form-floating label {
+    color: #000;
+}
+
+#form-container .form-floating > .form-control:focus~label {
+    color: var(--secondary-color);
+}
+
+#form-container input[type="submit"],
+#form-container input[type="checkbox"]:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn.btn-primary {
+    width: 100%;
+    margin-top: 25px;
+}
+
+@media(min-width: 768px) {
+    .btn.btn-primary {
+        width: auto;
+    }
+}
+
+.form-check label {
+    color: #000;
+}
+
+.obrigatorio {
+    color: red;
+}
+
+.form-msg {
+    text-align: center;
+}
+
+.form-msg h1,
+.form-msg p {
+    color: #000;
+}
+
+.btn-msg {
+    background-color: #FFF;
+    border: none;
+}
+
+.btn-msg a {
+    text-decoration: none;
+    width: 100px;
+    background-color: var(--secondary-color);
+    border: #00854B;
+}
+
+@media(min-width: 768px) {
+    .btn-msg {
+        text-align: center;
+    }
+
+    .btn-msg a {
+        font-size: 20px;
+    }
+}

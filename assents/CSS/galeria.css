@@ -1,0 +1,68 @@
+#gallery .image-container {
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    height: 250px;
+    cursor: pointer;
+    transition: .5s;
+    border: 3px solid #101010;
+}
+
+#gallery .leg h1 {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #00854b93;
+    padding: 10px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+}
+
+#gallery .leg h1:hover {
+    background-color: #00854b;
+}
+
+#gallery .image-container:hover {
+    border-color: var(--primary-color);
+    display: block;
+}
+
+#img1 {
+    background-image: url('../IMG/img1-pequena.jpg');
+}
+
+#img2 {
+    background-image: url('../IMG/img2-pequena.jpg');
+}
+
+#img3 {
+    background-image: url('../IMG/img3-pequena.jpg');
+}
+
+#img4 {
+    background-image: url('../IMG/img4-pequena.jpg');
+}
+
+#img5 {
+    background-image: url('../IMG/img5-pequena.jpg');
+}
+
+#img6 {
+    background-image: url('../IMG/img6.png');
+}
+
+.info-galeria {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.info-galeria h1 {
+    font-size: 40px;
+    color: #FFF;
+}
+
+.info-galeria h2 {
+    font-size: 25px;
+}

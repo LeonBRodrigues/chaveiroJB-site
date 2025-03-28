@@ -1,0 +1,32 @@
+#bottom-banner {
+    background-color: #101010;
+    padding: 4em 0;
+    text-align: center;
+}
+
+#bottom-banner .offer-subtitle,
+#bottom-banner h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#bottom-banner h2 {
+    color: var(--primary-color);
+    font-size: 30px;
+}
+
+#bottom-banner img {
+    max-width: 175px;
+}
+
+@media(min-width: 768px) {
+    #bottom-banner img {
+        max-width: 200px;
+    }
+}
+
+@media(min-width: 768px) {
+    #bottom-banner h2 {
+        font-size: 50px;
+    }
+}
