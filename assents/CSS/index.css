@@ -596,6 +596,8 @@
         color: #ffffff;
         font-size: 15px;
         text-align: center;
+      }
+      .contact-link li {
         list-style-type: none;
       }
 
@@ -658,7 +660,7 @@
         }
 
         .content-maps iframe {
-          max-width: 50vh;
+          max-width: 250px;
         }
       }
       

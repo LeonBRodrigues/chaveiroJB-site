@@ -47,7 +47,8 @@ main{
 }
 
 .container .services .card:hover{
-    background: rgba(12, 130, 3, 0.493);
+    background: #fff;
+    color: #222;
 }
 
 .container .services .card .content{
@@ -60,7 +61,7 @@ main{
 
 
 .container .services .card:hover .content .title{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .container .services .card .content .title{
