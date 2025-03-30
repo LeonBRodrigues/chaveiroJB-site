@@ -1,68 +1,148 @@
-#gallery .image-container {
-    background-size: cover;
-    position: relative;
-    background-position: center;
-    height: 250px;
-    cursor: pointer;
-    transition: .5s;
-    border: 3px solid #101010;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-#gallery .leg h1 {
-    color: #FFF;
-    font-weight: bold;
-    font-size: 20px;
-    background-color: #00854b93;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  ::selection{
+    color: #000000;
+    background: #007bff;
+  }
+  .container-gallery{
     padding: 10px;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-}
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
 
-#gallery .leg h1:hover {
-    background-color: #00854b;
-}
-
-#gallery .image-container:hover {
-    border-color: var(--primary-color);
-    display: block;
-}
-
-#img1 {
-    background-image: url('../IMG/img1-pequena.jpg');
-}
-
-#img2 {
-    background-image: url('../IMG/img2-pequena.jpg');
-}
-
-#img3 {
-    background-image: url('../IMG/img3-pequena.jpg');
-}
-
-#img4 {
-    background-image: url('../IMG/img4-pequena.jpg');
-}
-
-#img5 {
-    background-image: url('../IMG/img5-pequena.jpg');
-}
-
-#img6 {
-    background-image: url('../IMG/img6.png');
-}
-
-.info-galeria {
-    margin-top: 80px;
+ .heading-gallery {
+    padding-bottom: 50px;
     text-align: center;
-}
+    margin-top: 20px;
+  }
 
-.info-galeria h1 {
-    font-size: 40px;
-    color: #FFF;
-}
+  .heading-gallery h3 {
+    font-size: 3em;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ffffffb6;
+  }
 
-.info-galeria h2 {
-    font-size: 25px;
-}
+  .wrapper{
+    max-width: 1100px;
+  }
+  .gallery{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery .image{
+    padding: 7px;
+    width: calc(100% / 3);
+  }
+  .gallery .image span{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+  }
+  .gallery .image img{
+    width: 100%;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+  }
+  .gallery .image:hover img{
+    transform: scale(1.1);
+  }
+  .preview-box{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    background: #fff;
+    max-width: 100vh;
+    max-height: 100vh;
+    width: 90%;
+    z-index: 5;
+    opacity: 0;
+    pointer-events: none;
+    border-radius: 3px;
+    padding: 0 5px 5px 5px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+  }
+  .preview-box.show{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 0.3s ease;
+  }
+  .preview-box .details{
+    display: flex;
+    align-items: center;
+    padding: 12px 15px 12px 10px;
+    justify-content: space-between;
+    color: #000000;
+  }
+  .preview-box .details .title{
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .details .title p{
+    margin: 0 5px;
+  }
+  .details .title p.current-img{
+    font-weight: 500;
+  }
+  .details .icon{
+    color: #000000;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .preview-box .image-box{
+    display: flex;
+    width: 100%;
+    position: relative;
+    color: #000000;
+  }
+  .image-box .slide{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000000;
+    font-size: 3px;
+    cursor: pointer;
+    height: 50px;
+    width: 60px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 3px;
+  }
+  
+  .image-box img{
+    width: 100%;
+    border-radius: 0 0 3px 3px;
+  }
+  .shadow{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    display: none;
+    background: rgba(0,0,0,0.45);
+  }
+  @media(max-width: 1000px){
+    .gallery .image{
+      width: calc(100% / 2);
+    }
+  }
+  @media(max-width: 600px){
+    .gallery .image{
+      width: 100%;
+      padding: 4px;
+    }
+  }

@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="../CSS/galeria.css">
     <!-- JS -->
     <script src="../JS/main.js" defer></script>
+    <script src="../JS/galeria.js" defer></script>
     <!--FavIcon -->
     <link rel="shortcut icon" href="../IMG/logo.png" type="image/x-icon">
     <!--Fonts Awesome -->
-    <link rel="stylesheet" href="https://cdn.es.gov.br/fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Galeria</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16955356690">
@@ -31,61 +32,73 @@
 </head>
 <body>
     <header>
-        <div class="botao-voltar">
-            <a href="../../index.html"><i class="bi bi-arrow-left-circle"></i></a>
-        </div>
-    </header>
-    <main class="container">
-        <div class="info-galeria">
-            <h1>Chaves codificadas</h1>
-            <h2>Nacionais e importadas</h2>
-        </div>
-        <!-- Galeria -->
-        <div class="container-fluid" id="gallery">
-            <div class="row">
-                <div class="col-sm-12 col-md-3 image-container leg" id="img1">
-                    <h1>Aberturas automotivas</br>nacionais e importados 24hs.</h1>
-                </div>
-                <div class="col-sm-12 col-md-3 image-container leg" id="img2">
-                    <h1>Chavescanivetes</br>Adaptações, trocas de carcaça e codificações em geral</h1>
-                </div>
-                <div class="col-sm-12 col-md-3 image-container leg" id="img3">
-                    <h1>Cópias de chaves automotivas</br>Nacionais e importadas, produtos 100% original, com garantia e parcelamento sem juros.</h1>
-                </div>
-                <div class="col-sm-12 col-md-3 image-container leg" id="img4">
-                    <h1>Confecção de chave automotiva</h1>
-                </div>
-                <div class="col-sm-12 col-md-3 image-container leg" id="img5">
-                    <h1>Chaves codificadas</h1>
-                </div>
-                <div class="col-sm-12 col-md-9 image-container leg" id="video">
-                    <iframe width="102%" height="240" src="https://www.youtube.com/embed/_d-VaOHuNPo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #06af66c7;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img src="../IMG/logo.png" alt="Logo" width="75" height="40" class="d-inline-block align-text-top">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="servico.html">Serviços</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                </ul>
+              </div>
             </div>
-        </div>
-    </main>
-    <!--Redes sociais -->
-    <div class="container">
-        <div class="col-12" id="social-container">
-            <h1>Nossas Redes sociais</h1>
-            <a href="https://www.instagram.com/chaveirojoaobosco24h/" target="_blank"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.youtube.com/channel/UCleHv9hVldaUldRwSYQG8Dg" target="_blank"><i class="bi bi-youtube"></i></a>
-        </div>
+          </nav>
+    </header>
+    <div class="heading-gallery">
+        <h3>Fotos</h3>
     </div>
+    <main class="container-gallery">
+        <!-- Galeria fotos -->
+        <div class="wrapper">
+            <div class="gallery">
+              <div class="image"><span><img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/01/Chevrolet-Tracker.jpg?w=420&h=240&crop=1&quality=85" alt=""></span></div>
+              <div class="image"><span><img src="https://classic.exame.com/wp-content/uploads/2024/11/ED1269_Casual_Carro1.jpg?quality=70&strip=info&w=1024" alt=""></span></div>
+              <div class="image"><span><img src="https://dicas.olx.com.br/wp-content/uploads/2023/06/Melhores-carros-fiat-2023-.jpg" alt=""></span></div>
+              <div class="image"><span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxq19j-SzdgzTuYsYwNwqTacatduIDU_HZDw&s" alt=""></span></div>
+              <div class="image"><span><img src="https://image1.mobiauto.com.br/images/api/images/v1.0/60166693/transform/fl_progressive,f_webp,q_70,w_592" alt=""></span></div>
+            </div>
+          </div>
+          <div class="preview-box">
+            <div class="details">
+              <span class="title">Imagem <p class="current-img"></p> de <p class="total-img"></p></span>
+              <span class="icon fas fa-times"></span>
+            </div>
+            <div class="image-box">
+                <div class="slide prev"><i class="fa-solid fa-angle-right"></i></div>
+                <div class="slide next"><i class="fa-solid fa-angle-right"></i></div>
+                <img src="" alt="">
+              </div>
+          </div>
+          <div class="shadow"></div>
+    </main>
+    <div class="heading-gallery">
+        <h3>Videos</h3>
+    </div>
+     <!-- Elfsight YouTube Gallery | Untitled YouTube Gallery -->
+     <script src="https://static.elfsight.com/platform/platform.js" async></script>
+     <div class="elfsight-app-9485bfd9-feb8-497d-a6a7-b1dde2043fea" data-elfsight-app-lazy></div>
     <footer>
         <!-- Direitos Autorais -->
         <div id="copy-container">
             <p>Todos os direitos reservados 2025&copy; <a href="https://github.com/LeandroBRodrigues" target="_blank"><span class="primary-color">LeandroBRodrigues</span></a></p>
         </div>
-        <!-- Botao Whatsapp -->
-        <div id="div-fixa" class="flutuar" data-shrink="yes">
-            <a href="https://api.whatsapp.com/send?phone=5521999426736&text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20servi%C3%A7o" target="_blank">
-                <div class="flex-itens">
-                    <img src="../IMG/whatsapp.png" alt="icone whatsapp">
-                    <span style="color: #000;">Converse conosco!</span>
-                </div>
-            </a>
-        </div>
     </footer>
+    <!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-d5a15945-1b93-4d66-8391-b7cc7c3b411d" data-elfsight-app-lazy></div>
 </body>
 </html>
