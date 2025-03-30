@@ -2,14 +2,12 @@
 
 .carousel{
     width: 100vw;
-    height: 70vh;
+    height: 60vh;
     overflow: hidden;
     position: relative;
 }
 
 .carousel .list .item{
-    width: 180px;
-    height: 250px;
     position: absolute;
     top: 80%;
     transform: translateY(-70%);
