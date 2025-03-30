@@ -497,6 +497,11 @@
 
 /* Parceiros */
 
+.container-parceiros {
+  color: #fff;
+  text-align: center;
+}
+
 @keyframes fade{
     from{
       opacity:0.4;
@@ -520,8 +525,8 @@
       }
 
       .slides img{
-        width:100%;
-        height: 180px;
+        width:60%;
+        height: 200px;
         text-align: center;
       }
       
@@ -556,3 +561,91 @@
         margin:10px 0px;
       
       }
+
+      /* footer*/
+
+      .section-info {
+        width: 100%;
+        margin-top: 20px;
+        min-height: 100vh;
+        background-color: #f5f5f53e;
+      }
+      
+      .container-info {
+        width:80%;
+        display:block;
+        margin: auto;
+        padding-top: 100px;
+      }
+      
+      .container-info h1 {
+        text-transform: uppercase;
+        font-size: 25px;
+        text-align: center;
+        color: #000000;
+        font-weight: bolder;
+      }
+      
+      .container-info h3, ul{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #ffffff;
+        font-size: 15px;
+        text-align: center;
+        list-style-type: none;
+      }
+      
+      .container-info span {
+        font-weight: bold;
+        color: #000;
+      }
+      .flags {
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      .flags img {
+        width: 75px;
+        height: 45px;
+      }
+
+      .flags p {
+        color: #000;
+        font-weight: bolder;
+      }
+
+      .pix {
+        text-align: center;
+      }
+
+      .pix img {
+        width: 100px;
+      }
+      
+      .content-section-maps {
+        float: left;
+        width: 70%;
+      }
+      
+      .content-section-maps .content-maps {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+      
+      @media screen and (max-width: 768px) {
+        .container-info {
+          width:80%;
+          display:block;
+          margin: auto;
+          padding-top: 50px;
+        }
+        
+        .content-section-maps {
+          float: none;
+          width: 100%;
+          display: block;
+          margin: auto;
+        }
+      }
+      
+      
