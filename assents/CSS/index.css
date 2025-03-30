@@ -589,7 +589,8 @@
         font-weight: bolder;
       }
       
-      .container-info h3, ul{
+      .container-info h3, 
+      .contact-link ul{
         margin-top: 20px;
         margin-bottom: 20px;
         color: #ffffff;
@@ -598,7 +599,7 @@
         list-style-type: none;
       }
 
-      .link a {
+      .contact-link a {
         text-decoration: none;
         color: white;
       }
@@ -627,6 +628,7 @@
 
       .pix img {
         width: 100px;
+        padding-bottom: 10px;
       }
       
       .content-section-maps {
@@ -653,6 +655,10 @@
           width: 100%;
           display: block;
           margin: auto;
+        }
+
+        .content-maps iframe {
+          max-width: 50vh;
         }
       }
       
