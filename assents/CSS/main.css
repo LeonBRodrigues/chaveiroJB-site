@@ -36,3 +36,43 @@ body {
 .dark-bg-color {
     background-color: #101010;
 }
+
+.navbar {
+    background-color: var(--primary-color);
+  }
+  
+  .container-fluid button {
+    color: aliceblue;
+  }
+  
+  .logo {
+    width: 100px;
+  }
+  
+  .offcanvas-end {
+    opacity: 0.7;
+  }
+
+  .offcanvas-title {
+    color: black;
+    font-weight: bolder;
+    color: var(--secondary-color);
+  }
+  
+  .active {
+    font-weight: bolder;
+}
+  
+  .nav-link {
+    color: black;
+    font-size: 15px;
+    border-radius: 3px;
+    padding-left: 5px;
+    margin: auto;
+  }
+  
+  .nav-link:hover {
+    color: black;
+    font-size: 20px;
+    background-color: var(--light-color);
+  }
